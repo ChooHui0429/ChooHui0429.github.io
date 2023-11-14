@@ -1,0 +1,167 @@
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    min-height: 100vh;
+}
+
+.education.show-animate .edu h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: 1s;
+    transform: translateX(0);
+}
+
+.education .edu h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: 1s;
+    transform: translateX(-200%);
+}
+
+.education .edu .UniContainer {
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.education.show-animate .edu .UniContainer {
+    animation: zoomIn 1s ease forwards
+}
+
+.education .edu .UniContainer .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.education .edu .UniContainer .images img {
+    margin: 0 20px;
+    max-width: 500px; 
+    height: auto; 
+}
+
+.colab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    min-height: 100vh;
+}
+
+.colab.show-animate .colabContain h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: 1s;
+    transform: translateX(0);
+}
+
+.colab .colabContain h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: 1s;
+    transform: translateX(-200%);
+}
+
+.colab .colabContain .imgContainer {
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.colab.show-animate .colabContain .imgContainer {
+    animation: zoomIn 1s ease forwards
+}
+
+.colab .colabContain .imgContainer .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.colab .colabContain .imgContainer .images img {
+    margin: 0 20px;
+    max-width: 450px; 
+    height: auto; 
+}
+
+.member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    min-height: 100vh;
+}
+
+.member.show-animate .memContain h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: 1s;
+    transform: translateX(0);
+}
+
+.member .memContain h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: 1s;
+    transform: translateX(-200%);
+}
+
+.member .memContain .imgContainer {
+    background-color: #f0f0f0; 
+    padding: 20px; 
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.member.show-animate .memContain .imgContainer {
+    animation: zoomIn 1s ease forwards
+}
+
+.member .memContain .imgContainer .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.member .memContain .imgContainer .images img {
+    margin: 0 20px;
+    max-width: 450px; 
+    height: auto; 
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
