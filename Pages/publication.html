@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tan Choo Hui</title>
+    <link rel="stylesheet" href="../css/1_publication.css">
+    <script src="../js/1_publication_script.js"></script>
+    <link  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="../index.html" class="logo">Portfolio.</a>
+        
+        <nav class="navbar">
+            <a href="../index.html" style="--i:1;" >Home</a>
+            <a href="#" style="--i:2;">About</a>
+            <a href="#" style="--i:3;">News</a>
+            <a href="#" style="--i:4;" class="active">Publication</a>
+            <a href="#" style="--i:5;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="publication">
+        <div class="pageOrg">
+            <h1>PUBLICATION</h1>
+            <div class="projectContainer">
+                <div class="HER2-SISH2023">
+                    <h2 class="HER2Title"><span class="num_font">1.</span> HER2-SISH Histopathology Image Classification Using Deep Neural Networks<span class='note'> (Click on title for more information)</span></h2>
+                    <div class="Her2Contain1">
+                        <a href="https://ieeexplore.ieee.org/document/10222930"><p class="doi">DOI : 10.1109/ICIP49359.2023.10222930</p></a>
+                        <p class="font_1"><b>Choo Hui Tan</b>; Wei Jie Lim; Wan Siti Halimatul Munirah Wan Ahmad; Lai-Kuan Wong; Zaka Ur Rehman; Lai Meng Looi; Phaik Leng Cheah; Yen Fa Toh; Mohammad Faizal Ahmad Fauzi;</p>
+                        <p class="font_2">Faculty of Computing and Informatics, Multimedia University, Cyberjaya, Malaysia</p>
+                        <p class="font_2">Faculty of Engineering, Multimedia University, Cyberjaya, Malaysia</p>
+                        <p class="font_2">Department of Pathology, University Malaya Medical Center, Kuala Lumpur, Malaysia</p>
+                    </div>
+                    <div class="Her2Contain2">
+                        <p class="font_1"><b>Publisher :</b> Institute of Electrical and Electronics Engineers (IEEE)</p>
+                        <p class="font_1"><b>Published in :</b> 2023 IEEE International Conference on Image Processing (ICIP)</p>
+                        <p class="font_1"><b>Date of Conference :</b> 08-11 October 2023</p>
+                        <p class="font_1"><b>Date Added to IEEE Xplore :</b> 11 September 2023</p>
+                        <p class="font_1"><b>Abstract :</b></p>
+                        <p class="font_1">The status of the human epidermal growth factor receptor 2 (HER2) gene amplification is an important marker for assessing the efficacy of clinical treatments for breast cancer. This article discusses the application of deep learning to classify HER2-SISH (silver-enhanced in situ hybridization) pathological images and identifies their HER2/Chr17 amplification status. We used four pre-trained models for classifying the cases into either amplified or non-amplified: two models from the convolutional neural networks, CNNs (DenseNet, and MobileNet), and two transformer models (Vision Transformer, and Data-Efficient Image Transformers). Apart from these single models, we also built two ensemble models by concatenating the transformer and CNN architectures to observe their performances. A private dataset obtained from our collaborating hospital is used in this project, with several preprocessing techniques applied to the raw images prior to feeding the models. Promising results are reported with ViT emerged as the best performing model with a high accuracy of 87.48%, with 92.93% recall in detecting amplified HER2-SISH samples.</p>
+                        <p class="font_1"><b>Dataset Images Examples :</b></p>
+                        <div class="images">
+                            <figure>
+                                <img class="imgClass" src="../img/publication/SISH2023/amp.png" alt="">
+                                <figcaption class="figcap">Amplified class image</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="imgClass" src="../img/publication/SISH2023/nonAmp.png" alt="">
+                                <figcaption class="figcap">Non-amplified class image</figcaption>
+                            </figure>
+                        </div>
+                        <p class="font_1"><b>Colaboration Laboratory :</b> </p>
+                        <p class="font_1">1. <a href="https://viprlab.github.io/">Visual Image Processing Laboratory (ViprLab) Multimedia University (MMU)</a></p>
+                        <p class="font_1">2. Artificial Intelligence for Digital Pathology (AI4DP) Multimedia University (MMU) </p>
+                        <p class="font_1">3. Department of Pathology University Malaya Medical Center (UMMC) </p>
+
+                        
+                        <p class="font_1"><b>Link to the conference paper / DOI :</b> <a href="https://ieeexplore.ieee.org/document/10222930">10.1109/ICIP49359.2023.10222930</a></p>
+                        
+
+                    </div>
+                    <script>
+                        CollapseExpandBox(".publication .pageOrg .projectContainer .HER2-SISH2023 .HER2Title", 
+                        ".publication .pageOrg .projectContainer .HER2-SISH2023 .Her2Contain2", 
+                        ".publication .pageOrg .projectContainer .HER2-SISH2023 .Her2Contain1");
+                    </script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+</body>
+
+
+</html>
