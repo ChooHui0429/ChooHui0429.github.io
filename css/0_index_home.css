@@ -18,7 +18,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #0c1022;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,12 +27,14 @@ body {
 
 .logo {
     font-size: 25px;
+    background: #0c1022;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
     pointer-events: none;
     opacity: 0;
     animation: slideTop 1s ease forwards;
+    z-index: 1;
 }
 
 .navbar a {
@@ -268,7 +270,7 @@ body {
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 220px;
+    max-width: 225px;
     object-fit: cover;
 }
 
