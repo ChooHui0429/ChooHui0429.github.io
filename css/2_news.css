@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0c1022;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0c1022;
+    z-index: 100;
+}
+
+/* Heading */
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a.active,
+.navbar a:hover {
+    background: linear-gradient(45deg, #f06, #3cf);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@keyframes slideTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Publication Page Layout */
+.newsTimeline {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-direction: center;
+    min-height: 100vh;
+    margin-top: 7%;
+}
+
+/* Page Title Format */
+.newsTimeline .pageOrg h1 {
+    text-align: center;
+    font-size: 56px;
+    background: linear-gradient(45deg, #f06, #3cf, #f06);
+    background-size: 200%;
+    background-position: 0 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: TitleRun 4s ease-in-out infinite;
+}
+
+@keyframes TitleRun {
+    0% {
+        background-position: 0% 0;
+    }
+    50% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+    75% {
+        background-position: 300% 0;
+    }
+    100%{
+        background-position: 400% 0;
+    }
+}
